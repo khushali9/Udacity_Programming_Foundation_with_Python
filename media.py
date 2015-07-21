@@ -1,5 +1,6 @@
+import webbrowser
 class Movie():
-	def_init_(self,movie_t,st,pos,trailer):
+	def __init__(self,movie_t,st,pos,trailer):
 		self.title=movie_t
 		self.storyline=st
 		self.poster_image_url=pos
