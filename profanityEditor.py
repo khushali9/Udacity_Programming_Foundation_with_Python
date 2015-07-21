@@ -10,6 +10,12 @@ def read_text():
 def check_profanity(word):
 	con=urllib.urlopen("http://www.wdyl.com/profanity?q="+word)
 	out=con.read()
-	print(out)
+	#print(out)
 	con.close()
+	if "true" in out:
+		print("you shoul check the file")
+	elif "false" in out:
+		print("well done")
+	else:
+		print("could not scan the document")
 read_text()
